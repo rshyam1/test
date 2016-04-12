@@ -1,0 +1,280 @@
+Question #1 
+radhey@radhey-THINK MINGW64 ~/Documents/GitHub/datascience (master)
+$ mkdir test
+
+radhey@radhey-THINK MINGW64 ~/Documents/GitHub/datascience (master)
+$ ls
+data.txt  excercise_1/  rshyam1.ggithub.io/  test/  www2.txt
+
+radhey@radhey-THINK MINGW64 ~/Documents/GitHub/datascience (master)
+$ cd test
+
+radhey@radhey-THINK MINGW64 ~/Documents/GitHub/datascience/test (master)
+$ pwd
+/c/Users/radhey/Documents/GitHub/datascience/test
+
+radhey@radhey-THINK MINGW64 ~/Documents/GitHub/datascience/test (master)
+$ pwd
+/c/Users/radhey/Documents/GitHub/datascience/test
+
+radhey@radhey-THINK MINGW64 ~/Documents/GitHub/datascience/test (master)
+$ git init
+Initialized empty Git repository in C:/Users/radhey/Documents/GitHub/datascience/test/.git/
+
+radhey@radhey-THINK MINGW64 ~/Documents/GitHub/datascience/test (master)
+$ ^C
+
+radhey@radhey-THINK MINGW64 ~/Documents/GitHub/datascience/test (master)
+$ vi a.txt
+
+radhey@radhey-THINK MINGW64 ~/Documents/GitHub/datascience/test (master)
+$ vi a.txt
+
+radhey@radhey-THINK MINGW64 ~/Documents/GitHub/datascience/test (master)
+$ git status
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        a.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+radhey@radhey-THINK MINGW64 ~/Documents/GitHub/datascience/test (master)
+$ git add a.txt
+warning: LF will be replaced by CRLF in a.txt.
+The file will have its original line endings in your working directory.
+
+radhey@radhey-THINK MINGW64 ~/Documents/GitHub/datascience/test (master)
+$ git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   a.txt
+
+
+radhey@radhey-THINK MINGW64 ~/Documents/GitHub/datascience/test (master)
+$ git commit -m "This is first commit"
+[master (root-commit) 943aecb] This is first commit
+warning: LF will be replaced by CRLF in a.txt.
+The file will have its original line endings in your working directory.
+ 1 file changed, 1 insertion(+)
+ create mode 100644 a.txt
+
+radhey@radhey-THINK MINGW64 ~/Documents/GitHub/datascience/test (master)
+$ git status
+On branch master
+nothing to commit, working directory clean
+
+radhey@radhey-THINK MINGW64 ~/Documents/GitHub/datascience/test (master)
+$ pwd
+/c/Users/radhey/Documents/GitHub/datascience/test
+
+radhey@radhey-THINK MINGW64 ~/Documents/GitHub/datascience/test (master)
+$ mkdir subtest
+
+radhey@radhey-THINK MINGW64 ~/Documents/GitHub/datascience/test (master)
+$ cd subtest/
+
+radhey@radhey-THINK MINGW64 ~/Documents/GitHub/datascience/test/subtest (master)
+$ git init
+Initialized empty Git repository in C:/Users/radhey/Documents/GitHub/datascience/test/subtest/.git/
+
+radhey@radhey-THINK MINGW64 ~/Documents/GitHub/datascience/test/subtest (master)
+$ git status
+On branch master
+
+Initial commit
+
+nothing to commit (create/copy files and use "git add" to track)
+
+radhey@radhey-THINK MINGW64 ~/Documents/GitHub/datascience/test/subtest (master)
+$ pwd
+/c/Users/radhey/Documents/GitHub/datascience/test/subtest
+
+radhey@radhey-THINK MINGW64 ~/Documents/GitHub/datascience/test/subtest (master)
+$ echo "this is a1" > a1.text
+
+radhey@radhey-THINK MINGW64 ~/Documents/GitHub/datascience/test/subtest (master)
+$ ls
+a1.text
+
+radhey@radhey-THINK MINGW64 ~/Documents/GitHub/datascience/test/subtest (master)
+$ echo "this is a2" > a2.text
+
+radhey@radhey-THINK MINGW64 ~/Documents/GitHub/datascience/test/subtest (master)
+$ ls
+a1.text  a2.text
+
+radhey@radhey-THINK MINGW64 ~/Documents/GitHub/datascience/test/subtest (master)
+$ cd ..
+
+radhey@radhey-THINK MINGW64 ~/Documents/GitHub/datascience/test (master)
+$ ls
+a.txt  subtest/
+
+radhey@radhey-THINK MINGW64 ~/Documents/GitHub/datascience/test (master)
+$ vi a.txt
+
+radhey@radhey-THINK MINGW64 ~/Documents/GitHub/datascience/test (master)
+$ echo " This is b file " > b.txt
+
+radhey@radhey-THINK MINGW64 ~/Documents/GitHub/datascience/test (master)
+$ pwd
+/c/Users/radhey/Documents/GitHub/datascience/test
+
+radhey@radhey-THINK MINGW64 ~/Documents/GitHub/datascience/test (master)
+$  git add --all
+warning: LF will be replaced by CRLF in b.txt.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in subtest/a1.text.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in subtest/a2.text.
+The file will have its original line endings in your working directory.
+
+radhey@radhey-THINK MINGW64 ~/Documents/GitHub/datascience/test (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   b.txt
+        new file:   subtest/a1.text
+        new file:   subtest/a2.text
+
+
+radhey@radhey-THINK MINGW64 ~/Documents/GitHub/datascience/test (master)
+$ git commit -m " Commiting all together"
+[master 09b8e89]  Commiting all together
+warning: LF will be replaced by CRLF in b.txt.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in subtest/a1.text.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in subtest/a2.text.
+The file will have its original line endings in your working directory.
+ 3 files changed, 3 insertions(+)
+ create mode 100644 b.txt
+ create mode 100644 subtest/a1.text
+ create mode 100644 subtest/a2.text
+
+radhey@radhey-THINK MINGW64 ~/Documents/GitHub/datascience/test (master)
+$ git status
+On branch master
+nothing to commit, working directory clean
+
+radhey@radhey-THINK MINGW64 ~/Documents/GitHub/datascience/test (master)
+$ git log --graph --decorate
+* commit 09b8e89bbb3d972ec25fed9cdb3ac94476c5cf22 (HEAD -> master)
+| Author: rshyam1 <rshyam@g.clemson.edu>
+| Date:   Tue Apr 12 18:39:25 2016 -0400
+|
+|      Commiting all together
+|
+* commit 943aecbf5faf096de2d81a3724d70e11069ba504
+  Author: rshyam1 <rshyam@g.clemson.edu>
+  Date:   Tue Apr 12 18:24:41 2016 -0400
+
+      This is first commit
+
+radhey@radhey-THINK MINGW64 ~/Documents/GitHub/datascience/test (master)
+$  git log --pretty=oneline
+09b8e89bbb3d972ec25fed9cdb3ac94476c5cf22  Commiting all together
+943aecbf5faf096de2d81a3724d70e11069ba504 This is first commit
+
+radhey@radhey-THINK MINGW64 ~/Documents/GitHub/datascience/test (master)
+$ pwd
+/c/Users/radhey/Documents/GitHub/datascience/test
+
+radhey@radhey-THINK MINGW64 ~/Documents/GitHub/datascience/test (master)
+$ git remote add test https://github.com/rshyam1/test
+
+radhey@radhey-THINK MINGW64 ~/Documents/GitHub/datascience/test (master)
+$ git remote -v
+test    https://github.com/rshyam1/test (fetch)
+test    https://github.com/rshyam1/test (push)
+
+radhey@radhey-THINK MINGW64 ~/Documents/GitHub/datascience/test (master)
+$ pwd
+/c/Users/radhey/Documents/GitHub/datascience/test
+
+radhey@radhey-THINK MINGW64 ~/Documents/GitHub/datascience/test (master)
+$ ls
+a.txt  b.txt  subtest/
+
+radhey@radhey-THINK MINGW64 ~/Documents/GitHub/datascience/test (master)
+$ echo "Github is awesome" >> a.txt
+
+radhey@radhey-THINK MINGW64 ~/Documents/GitHub/datascience/test (master)
+$ cat a.txt
+Git is good
+Github is awesome
+
+radhey@radhey-THINK MINGW64 ~/Documents/GitHub/datascience/test (master)
+$
+
+radhey@radhey-THINK MINGW64 ~/Documents/GitHub/datascience/test (master)
+$ git diff --a.txt
+error: invalid option: --a.txt
+
+radhey@radhey-THINK MINGW64 ~/Documents/GitHub/datascience/test (master)
+$ git diff -- a.txt
+diff --git a/a.txt b/a.txt
+index 0d9b090..9874a14 100644
+--- a/a.txt
++++ b/a.txt
+@@ -1 +1,2 @@
+ Git is good
++Github is awesome
+warning: LF will be replaced by CRLF in a.txt.
+The file will have its original line endings in your working directory.
+
+radhey@radhey-THINK MINGW64 ~/Documents/GitHub/datascience/test (master)
+$ git add a.txt
+warning: LF will be replaced by CRLF in a.txt.
+The file will have its original line endings in your working directory.
+
+radhey@radhey-THINK MINGW64 ~/Documents/GitHub/datascience/test (master)
+$ git commit -m " commiting the a file after Git is awesome "
+[master warning: LF will be replaced by CRLF in a.txt.
+The file will have its original line endings in your working directory.
+43e12fd]  commiting the a file after Git is awesome
+warning: LF will be replaced by CRLF in a.txt.
+The file will have its original line endings in your working directory.
+ 1 file changed, 1 insertion(+)
+
+radhey@radhey-THINK MINGW64 ~/Documents/GitHub/datascience/test (master)
+$ git diff -- a.txt
+
+radhey@radhey-THINK MINGW64 ~/Documents/GitHub/datascience/test (master)
+$ git status
+On branch master
+nothing to commit, working directory clean
+
+radhey@radhey-THINK MINGW64 ~/Documents/GitHub/datascience/test (master)
+$  git push origin master
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+radhey@radhey-THINK MINGW64 ~/Documents/GitHub/datascience/test (master)
+$ pwd
+/c/Users/radhey/Documents/GitHub/datascience/test
+
+radhey@radhey-THINK MINGW64 ~/Documents/GitHub/datascience/test (master)
+$  git push origin master
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+radhey@radhey-THINK MINGW64 ~/Documents/GitHub/datascience/test (master)
